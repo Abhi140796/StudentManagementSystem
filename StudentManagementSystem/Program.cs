@@ -22,12 +22,13 @@ namespace StudentManagementSystem
             int option;
             do
             {
-                Console.WriteLine("=================================================");
+                Console.WriteLine("");
+                Console.WriteLine("============================Student Management System=============================");
                 Console.WriteLine("[1]. Add Student \n[2]. View Data \n[3]. Exit");
                 Console.WriteLine("");
                 Console.WriteLine("Choose An Action To Perform: ");
                 option = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("=================================================");
+                Console.WriteLine("==================================================================================");
                 Console.WriteLine("");
                 switch(option)
                 {
@@ -78,6 +79,7 @@ namespace StudentManagementSystem
                         break;
 
                     default:
+                        Console.WriteLine("");
                         Console.WriteLine("=================================================");
                         Console.WriteLine("[1]. Add Student \n[2]. View Data \n[3]. Exit");
                         Console.WriteLine("");
