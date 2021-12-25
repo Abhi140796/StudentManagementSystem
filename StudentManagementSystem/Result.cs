@@ -13,11 +13,32 @@ namespace StudentManagementSystem
         public string[] SubjectName { get {return Subject; } set {Subject = value; } }
         public int[] SubjectMarks { get { return Marks; } set { Marks = value; } }
 
-        public static string[] AddSubjects(string[] subjectName)
+        public static char GenerateGrade(int subjectMarks)
         {
-            int numberOfSubjects = 5;
-
-            return subjectName;
+            if(subjectMarks >= 90)
+            {
+                return 'A';
+            }
+            else if(subjectMarks >= 75 && subjectMarks < 90)
+            {
+                return 'B';
+            }
+            else if (subjectMarks >= 60 && subjectMarks < 75)
+            {
+                return 'C';
+            }
+            else if (subjectMarks >= 45 && subjectMarks < 60)
+            {
+                return 'D';
+            }
+            else if (subjectMarks >= 35 && subjectMarks < 45)
+            {
+                return 'E';
+            }
+            else
+            {
+                return 'F';
+            }
         }
     }
 }
