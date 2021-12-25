@@ -18,6 +18,7 @@ namespace StudentManagementSystem
             Student[] studentData = new Student[0];
             #endregion
 
+            #region Console Menu
             int option;
             do
             {
@@ -88,5 +89,6 @@ namespace StudentManagementSystem
             }
             while (option != 3);
         }
+        #endregion
     }
 }
